@@ -1,0 +1,10 @@
+DEPOSIT=1
+WITHDRAW=2
+PRINTTOK=3
+NUM=4
+DIGIT=5
+ID=6
+WS=7
+'dep'=1
+'withdraw'=2
+'print'=3

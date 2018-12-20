@@ -1,0 +1,8 @@
+rollo dep 100
+moog dep 200
+rollo withdraw 1
+moog withdraw 300
+wally withdraw 10
+print rollo
+print moog
+print wally

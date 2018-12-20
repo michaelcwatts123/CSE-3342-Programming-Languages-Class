@@ -1,0 +1,48 @@
+[
+{
+name:Mac,
+code:Java,
+cpu:Intel Core i5,
+clock:2.9 Ghz,
+memory:8 GB,
+cores:4,
+processesRunning:362,
+timeSingleThread:6,
+timeMTNNoLocks:120,
+timeMTLocks:444
+},
+{
+name:Genuse30,
+code:Java,
+cpu:Dell R710,
+clock:3.4 Ghz,
+memory:192 GB,
+cores:6,
+processesRunning:560,
+timeSingleThread:6,
+timeMTNNoLocks:113,
+timeMTLocks:488
+},
+{
+name:Mac,
+code:Python,
+cpu:Intel Core i5,
+clock:2.9 Ghz,
+memory:8 GB,
+cores:4,
+processesRunning:362,
+timeSingleThread:7467,
+timeMTLocks:32752
+},
+{
+name:Genuse30,
+code:Python,
+cpu:Dell R710,
+clock:3.4 Ghz,
+memory:192 GB,
+cores:6,
+processesRunning:560,
+timeSingleThread:7231,
+timeMTLocks:44010
+}
+]

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="drawcanvas2.js"></script>
+<script>
+$(document).ready(function(){
+    $("#getdata").click(function(){
+        $.getJSON("sprites.json", function(data, status){
+            // remove alerts in production code
+            // use to test your code
+            // alert("Data: " + data + "\nStatus: " + status);
+            // alert(data[0].x);
+            for(let i = 0; i < data.length; i++){
+                let a = new Sprite(data[i].team, data[i].x, data[i].y, data[i].dir, data[i].speed, data[i].weight);
+                gSpriteList.push(a);
+            }
+
+            // todo: add sprites from JSON data array to spriteList
+
+
+            // todo: draw all sprites in spriteList
+
+
+        });
+    });
+});
+</script>
+
+
+</head>
+
+<body onload="drawGrid()">
+
+<h2>Gismo</h2>
+<canvas id="myCanvas" width="500" height="425"></canvas>
+
+<h3>Grid control</h3>
+<button id="clear" type="button" onclick="clearCanvas()">Clear Grid</button>
+<button onclick="drawGrid()">Draw Grid</button>
+<button onclick="clearCanvas();drawGrid()">Clear and Draw Grid</button>
+
+<h3>Data Entry : add to spriteList and Draw ----------------</h3>
+<form id="frm1">
+  team: <input type="text" name="team" maxlength="1" size="2">
+  x: <input type="text" name="x" value="0" maxlength="3" size="3">
+  y: <input type="text" name="y" value="0" maxlength="3" size="3">
+  dir: <input type="text" name="dir" value="0" maxlength="3" size="3">
+  speed: <input type="text" name="speed" value="0" maxlength="3" size="3">
+  weight: <input type="text" name="weight" value="0" maxlength="3" size="3">
+</form>
+<button onclick="processForm()">ADD SPRITE AND DRAW (from Form Data)</button>
+
+<h3>Load data from server - add to list and display  -----------</h3>
+<button id="getdata" type="button">Get JSON data from server</button>
+
+<h3>Sprite Functions  --------------</h3>
+<button onclick="drawSpritesFromSpriteList()">DrawSpritesFromSpriteList</button>
+<button onclick="removeSpritesFromSpriteList()">RemoveSpritesFromSpriteList</button>
+
+
+
+
+</body>

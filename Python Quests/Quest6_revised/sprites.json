@@ -1,0 +1,11 @@
+[ {"x":6, "y":3, "team":1, "dir":45, "weight":3, "speed":1}, 
+  {"x":12, "y":3, "team":1, "dir":90, "weight":3, "speed":1},
+  {"x":10, "y":3, "team":1, "dir":90, "weight":3, "speed":1},
+  {"x":8,  "y":3, "team":1, "dir":90, "weight":3, "speed":1},
+  {"x":4, "y":3, "team":1, "dir":90, "weight":3, "speed":1},
+  {"x":6, "y":13, "team":2, "dir":45, "weight":3, "speed":1}, 
+  {"x":12, "y":13, "team":2, "dir":90, "weight":3, "speed":1},
+  {"x":10, "y":13, "team":2, "dir":90, "weight":3, "speed":1},
+  {"x":8,  "y":13,  "team":2, "dir":90, "weight":3, "speed":1},
+  {"x":4, "y":13, "team":2, "dir":90, "weight":3, "speed":1} 
+]

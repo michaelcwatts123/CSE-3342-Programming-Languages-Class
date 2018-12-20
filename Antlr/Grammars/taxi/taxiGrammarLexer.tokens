@@ -1,0 +1,14 @@
+T__0=1
+T__1=2
+T__2=3
+NUM=4
+DIGIT=5
+Q=6
+TTOK=7
+STR=8
+WS=9
+'is waiting at'=1
+'Writer\'s Depot.'=2
+'Starchild Numerology.'=3
+'"'=6
+'the'=7
